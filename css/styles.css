@@ -1,0 +1,208 @@
+/* ========body styles=============== */
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  color: #fbfbfb;
+}
+/* ========end body styles=========== */
+/* =============header=============== */
+.header-link {
+  color: #000000;
+}
+.nav-link {
+  font-weight: 500;
+  line-height: 1.25;
+  color: #000000;
+}
+
+.nav-link-shop {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  background: #7a3145;
+}
+
+/* ==========end header=============== */
+/* ================hero=============== */
+.main-hero {
+  background: #576f35;
+}
+
+.title-one {
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 500;
+  line-height: 1.25;
+}
+/* =============end hero=============== */
+/* ============= how its work========== */
+#how-it-works {
+  background: #576f35;
+}
+
+.title-three {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.title-color {
+  color: #d4bfc4;
+}
+.hiw-link {
+  background: #fbfbfb;
+}
+
+.hiw-link .text {
+  color: #858585;
+}
+
+.text-color {
+  font-weight: 700;
+  color: #141414;
+}
+/* ==========end how its work========== */
+/* ==========advertisement============= */
+.advertisement {
+  background: #fbfbfb;
+}
+
+.advertisement-text {
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+.advertisement-color {
+  color: #fbfbfb;
+  background: #576f35;
+}
+/* ==========end advertisement========== */
+/* =============vegetables============= */
+#vegetables {
+  background: #7a3145;
+}
+
+.title-two {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+
+.veg-link {
+  background: #fbfbfb;
+}
+
+.veg-link .title-three {
+  color: #7a3145;
+}
+
+.veg-link .text {
+  color: #141414;
+}
+
+/* ===========end vegetables=========== */
+/* ================reviews============ */
+#reviews {
+  background: #fbfbfb;
+}
+
+#reviews .title-two {
+  color: #141414;
+}
+
+.rev-color {
+  color: #576f35;
+}
+
+#reviews > .text {
+  color: #141414;
+}
+
+.title-four {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #141414;
+}
+
+.title-four ~ .text {
+  color: #858585;
+}
+/* ==============end reviews=========== */
+/* ==============your order=========== */
+#shop-now {
+  background: #576f35;
+}
+
+.order {
+  background: #fbfbfb;
+}
+
+.order .title-three {
+  color: #141414;
+}
+
+.order-red {
+  color: #7a3145;
+}
+
+.order-green {
+  color: #576f35;
+}
+
+.order-social {
+  background: #7a3145;
+}
+
+.text-social {
+  font-weight: 700;
+  line-height: 1.25;
+  color: #d4bfc4;
+}
+
+.social-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+/* ===========end your order========== */
+/* ==============footer=============== */
+.footer-page {
+  background: #7a3145;
+}
+/* ==============end footer=========== */

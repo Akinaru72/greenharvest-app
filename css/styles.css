@@ -205,4 +205,23 @@ body {
 .footer-page {
   background: #7a3145;
 }
+
+.footer-link {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.address-link {
+  font-weight: 700;
+  line-height: 1.25;
+  font-style: normal;
+}
+
+.text.policy {
+  color: #d4bfc4;
+}
+
 /* ==============end footer=========== */

@@ -41,6 +41,7 @@ body {
   margin-left: auto;
 }
 /* ========end body styles=========== */
+
 /* =============header=============== */
 .header-page .container {
   background-color: green;
@@ -93,8 +94,8 @@ body {
   background: #fbfbfb;
   border: none;
 }
-
 /* ==========end header=============== */
+
 /* ================hero=============== */
 .main-hero .container {
   background: #576f35;
@@ -131,8 +132,8 @@ body {
   text-align: left;
 }
 /* =============end hero=============== */
-/* ============= how its work========== */
 
+/* ============= how its work========== */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -198,6 +199,7 @@ body {
   color: #141414;
 }
 /* ==========end how its work========== */
+
 /* ==========advertisement============= */
 .advertisement .container {
   padding-top: 100px;
@@ -223,9 +225,12 @@ body {
   background: #576f35;
 }
 /* ==========end advertisement========== */
+
 /* =============vegetables============= */
-#vegetables {
+.main-vegetables .container {
   background: #7a3145;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .title-two {
@@ -237,34 +242,81 @@ body {
   color: #fbfbfb;
 }
 
+.main-vegetables .title-two {
+  max-width: 508px;
+  margin-bottom: 24px;
+}
+
+.main-vegetables .text {
+  max-width: 626px;
+  margin-bottom: 52px;
+}
+
+.veg-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 28px;
+}
+
 .veg-link {
   background: #fbfbfb;
+  border-radius: 40px;
+  padding: 32px;
+  flex-basis: calc((100% - 24px * 2) / 3);
 }
 
 .veg-link .title-three {
   color: #7a3145;
+  margin-bottom: 12px;
 }
 
 .veg-link .text {
   color: #141414;
+  margin-bottom: 8px;
 }
-
 /* ===========end vegetables=========== */
+
 /* ================reviews============ */
-#reviews {
+.main-reviews .container {
   background: #fbfbfb;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-#reviews .title-two {
+.main-reviews .title-two {
   color: #141414;
+  margin-bottom: 24px;
+  max-width: 553px;
 }
 
 .rev-color {
   color: #576f35;
 }
 
-#reviews > .text {
+.main-reviews .text {
   color: #141414;
+  max-width: 553px;
+  margin-bottom: 52px;
+}
+
+.reviews-list {
+  display: flex;
+  gap: 24px;
+}
+
+.reviews-link {
+  flex-basis: calc((100% - 24px * 2) / 3);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #d4bfc4;
+  border-radius: 24px;
+}
+
+.reviews-image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
 }
 
 .title-four {
@@ -275,23 +327,48 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #141414;
+  margin-bottom: 8px;
 }
 
 .title-four ~ .text {
   color: #858585;
+  max-width: 288px;
+  margin-bottom: 0;
 }
 /* ==============end reviews=========== */
 /* ==============your order=========== */
-#shop-now {
+.main-shop .container {
   background: #576f35;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.order {
+.main-shop .title-two {
+  margin-bottom: 24px;
+  max-width: 751px;
+}
+
+.main-shop .text {
+  margin-bottom: 52px;
+  max-width: 742px;
+}
+
+.shop-box {
+  display: flex;
+  gap: 32px;
+}
+
+.shop-box-order {
+  flex-basis: ((100% - 24px) / 2);
   background: #fbfbfb;
+  padding: 52px 48px;
+  border-radius: 30px;
+  height: 592px;
 }
 
-.order .title-three {
+.main-shop .title-three {
   color: #141414;
+  max-width: 450px;
 }
 
 .order-red {
@@ -302,14 +379,22 @@ body {
   color: #576f35;
 }
 
-.order-social {
+.shop-box-social {
+  flex-basis: ((100% - 24px) / 2);
   background: #7a3145;
+  padding: 52px 48px;
+  border-radius: 30px;
+}
+
+.shop-box-image {
+  margin-bottom: 80px;
 }
 
 .text-social {
   font-weight: 700;
   line-height: 1.25;
   color: #d4bfc4;
+  margin-bottom: 16px;
 }
 
 .social-name {
@@ -320,24 +405,71 @@ body {
   text-transform: uppercase;
   color: #fbfbfb;
 }
+
+.social-name-list {
+  display: flex;
+  gap: 12px;
+}
 /* ===========end your order========== */
+
 /* ==============footer=============== */
-.footer-page {
+.footer-page .container {
   background: #7a3145;
+  padding-top: 52px;
+  padding-bottom: 52px;
 }
 
+.box-menu-address {
+  display: flex;
+  margin-bottom: 124px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.footer-logo-text {
+  margin-right: 250px;
+}
+
+.footer-logo-text .text {
+  max-width: 265px;
+}
+
+.footer-list {
+  margin-right: 121px;
+}
 .footer-link {
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.footer-last {
+  margin-bottom: 0;
 }
 
 .address-link {
+  display: block;
   font-weight: 700;
   line-height: 1.25;
   font-style: normal;
+  margin-bottom: 24px;
+  max-width: 215px;
+}
+
+.footer-box-policy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-policy-list {
+  display: flex;
+  gap: 12px;
 }
 
 .text.policy {

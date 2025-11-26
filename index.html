@@ -105,6 +105,7 @@
       <!-- Advertisement  -->
       <section class="advertisement">
         <div class="container">
+          <h2 class="visually-hidden">Advertisement</h2>
           <p class="advertisement-text">
             <span class="advertisement-color">Discount up to 40%!</span> Taste
             the vitamins and keep your health
@@ -248,6 +249,36 @@
                 easy! Fill out <span class="order-green">the form</span> below
                 and we will contact you !
               </h3>
+              <form class="form-shop">
+                <label class="form-label">
+                  <input
+                    class="form-input"
+                    name="user-full-name"
+                    type="text"
+                    placeholder="Full Name"
+                    minlength="4"
+                    required
+                  />
+                </label>
+                <label class="form-label">
+                    <input
+                      class="form-input"
+                      name="user-email"
+                      type="email"
+                      placeholder="Email"
+                      pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
+                      required
+                    />
+                </label class="form-label">
+                <label>
+                  <textarea
+                    class="form-comment"
+                    name="user-comment"
+                    placeholder="Comment"
+                  ></textarea>
+                </label>
+                <button class="form-button" type="submit">Send</button>
+              </form>
             </div>
             <div class="shop-box-social">
               <img
@@ -260,7 +291,7 @@
               <ul class="social-name-list">
                 <li class="social-name-link">
                   <a
-                    class="social-name"
+                    class="social-name social-link"
                     href="https://www.instagram.com/goitclub/"
                     >instagram</a
                   >
@@ -268,14 +299,14 @@
                 <li class="social-name-link"><p class="social-name">/</p></li>
                 <li class="social-name-link">
                   <a
-                    class="social-name"
+                    class="social-name social-link"
                     href="https://www.facebook.com/goITclub/"
                     >facebook</a
                   >
                 </li>
                 <li class="social-name-link"><p class="social-name">/</p></li>
                 <li class="social-name-link">
-                  <a class="social-name" href="https://www.youtube.com/c/GoIT"
+                  <a class="social-name social-link" href="https://www.youtube.com/c/GoIT"
                     >youtube</a
                   >
                 </li>
@@ -314,7 +345,7 @@
             <ul>
               <li>
                 <a
-                  class="address-link"
+                  class="address-link address-tel"
                   href="tel:+38068443-94-26"
                   target="_blank"
                   >+38 (068) 443-94-26</a

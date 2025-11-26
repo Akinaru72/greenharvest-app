@@ -91,19 +91,21 @@ body {
   padding: 16px 32px;
   margin-right: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  border: none;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: #7a3145;
   background-color: #d4bfc4;
-  border: none;
+  border-color: #d4bfc4;
 }
 
 .nav-link:active {
   color: #7a3145;
   background: #fbfbfb;
-  border: none;
+  border: #fbfbfb;
 }
 /* ==========end header=============== */
 
@@ -197,6 +199,7 @@ body {
 .title-color {
   color: #d4bfc4;
 }
+
 .hiw-link {
   position: relative;
   background: #fbfbfb;
@@ -420,6 +423,7 @@ li.hiw-link:nth-child(3) .text::before {
 .main-shop .title-three {
   color: #141414;
   max-width: 450px;
+  margin-bottom: 0;
 }
 
 .order-red {
@@ -428,6 +432,103 @@ li.hiw-link:nth-child(3) .text::before {
 
 .order-green {
   color: #576f35;
+}
+
+.form-shop {
+  padding-top: 52px;
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: block;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #141414;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid #858585;
+  border-radius: 30px;
+  height: 52px;
+  padding-left: 15px;
+  margin-bottom: 16px;
+  box-shadow: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-comment {
+  width: 100%;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #141414;
+  border: 1px solid #858585;
+  border-radius: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 16px;
+  height: 96px;
+  margin-bottom: 24px;
+  resize: none;
+  box-shadow: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover,
+.form-input:focus,
+.form-comment:hover,
+.form-comment:focus {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.form-input::placeholder,
+.form-comment::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #141414;
+}
+
+.form-input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+.form-input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+.form-button {
+  border-radius: 30px;
+  width: 100%;
+  background-color: #7a3145;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  height: 52px;
+  outline: none;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button:hover,
+.form-button:focus {
+  color: #7a3145;
+  background-color: #d4bfc4;
+  border-color: #d4bfc4;
+}
+
+.form-button:active {
+  color: #7a3145;
+  background-color: #fbfbfb;
+  border-color: #fbfbfb;
 }
 
 .shop-box-social {
@@ -448,6 +549,11 @@ li.hiw-link:nth-child(3) .text::before {
   margin-bottom: 16px;
 }
 
+.social-name-list {
+  display: flex;
+  gap: 12px;
+}
+
 .social-name {
   font-weight: 600;
   font-size: 18px;
@@ -455,12 +561,14 @@ li.hiw-link:nth-child(3) .text::before {
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-name-list {
-  display: flex;
-  gap: 12px;
+.social-link:hover,
+.social-link.address-link {
+  color: #d4bfc4;
 }
+
 /* ===========end your order========== */
 
 /* ==============footer=============== */
@@ -498,6 +606,13 @@ li.hiw-link:nth-child(3) .text::before {
   letter-spacing: -0.01em;
   text-transform: uppercase;
   margin-bottom: 24px;
+  color: #fbfbfb;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #d4bfc4;
 }
 
 .footer-last {
@@ -511,8 +626,14 @@ li.hiw-link:nth-child(3) .text::before {
   font-style: normal;
   margin-bottom: 24px;
   max-width: 215px;
+  color: #fbfbfb;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.address-tel:hover,
+.address-tel:focus {
+  color: #d4bfc4;
+}
 .footer-box-policy {
   display: flex;
   justify-content: space-between;

@@ -27,10 +27,10 @@
           class="header-link"
           href="https://akinaru72.github.io/greenharvest-app/"
         >
-          <svg width="216" height="20">
+          <svg class="header-logo">
             <use href="./images/sprite.svg#icon-logo"></use></svg
         ></a>
-        <nav>
+        <nav class="header-nav">
           <ul class="header-list">
             <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
             <li><a class="nav-link" href="#vegetables">Vegetables</a></li>
@@ -38,6 +38,35 @@
             <li><a class="nav-link shop" href="#shop-now">Shop now</a></li>
           </ul>
         </nav>
+        <button class="header-button-open" type="button" id="open-modal-window">
+          <svg class="icon-open">
+            <use href="./images/sprite.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Modal Window -->
+      <div class="modal-backdrop" id="mobile-window">
+        <div class="modal-window">
+          <button
+            class="header-button-close"
+            type="button"
+            id="close-mobile-window"
+          >
+            <svg class="icon-close">
+              <use href="./images/sprite.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul>
+            <li class="modal-nav-link">
+              <a href="#how-it-works">How It Works</a>
+            </li>
+            <li class="modal-nav-link"><a href="#vegetables">Vegetables</a></li>
+            <li class="modal-nav-link"><a href="#reviews">Reviews</a></li>
+            <li class="modal-nav-link modal-shop">
+              <a href="#shop-now">Shop now</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -61,11 +90,33 @@
         <div class="container">
           <div class="hiw-image">
             <h2 class="visually-hidden">How it works</h2>
-            <img
-              src="./images/how-it-works/how-it-works-png.png"
-              alt="Woman with knife"
-              width="440"
-            />
+            <picture class="hiw-picture">
+              <source
+                srcset="
+                  ./images/desktop/hiw-desktop-1.png 1x,
+                  ./images/desktop/hiw-desktop-2.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/hiw-tablet-1.png 1x,
+                  ./images/tablet/hiw-tablet-2.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/hiw-mobile-1.png 1x,
+                  ./images/mobile/hiw-mobile-2.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/mobile/hiw-mobile-1.png"
+                alt="woman with khife"
+              />
+            </picture>
           </div>
           <div class="hiw-content">
             <h3 class="title-three">
@@ -127,48 +178,176 @@
             <li class="veg-link">
               <h3 class="title-three">eggplant</h3>
               <p class="text">60 USD / kg</p>
-              <img
-                src="./images/vegetables/eggplant.png"
-                alt="eggplant"
-                width="280"
-              />
+              <picture class="veg-picture">
+                <source
+                  srcset="
+                    ./images/desktop/veg-desktop-1-1x.png 1x,
+                    ./images/desktop/veg-desktop-1-2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/veg-tablet-1-1x.png 1x,
+                    ./images/tablet/veg-tablet-1-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/veg-mobile-1-1x.png 1x,
+                    ./images/mobile/veg-mobile-1-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mobile/veg-mobile-1-1x.png" alt="eggplant" />
+              </picture>
             </li>
             <li class="veg-link">
               <h3 class="title-three">leek</h3>
               <p class="text">50 USD / kg</p>
-              <img src="./images/vegetables/leek.png" alt="leek" width="280" />
+              <picture class="veg-picture">
+                <source
+                  srcset="
+                    ./images/desktop/veg-desktop-2-1x.png 1x,
+                    ./images/desktop/veg-desktop-2-2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/veg-tablet-2-1x.png 1x,
+                    ./images/tablet/veg-tablet-2-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/veg-mobile-2-1x.png 1x,
+                    ./images/mobile/veg-mobile-2-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mobile/veg-mobile-2-1x.png" alt="leek" />
+              </picture>
             </li>
             <li class="veg-link">
               <h3 class="title-three">mushrooms</h3>
               <p class="text">40 USD / kg</p>
-              <img
-                src="./images/vegetables/mushrooms.png"
-                alt="mushrooms"
-                width="280"
-              />
+              <picture class="veg-picture">
+                <source
+                  srcset="
+                    ./images/desktop/veg-desktop-3-1x.png 1x,
+                    ./images/desktop/veg-desktop-3-2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/veg-tablet-3-1x.png 1x,
+                    ./images/tablet/veg-tablet-3-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/veg-mobile-3-1x.png 1x,
+                    ./images/mobile/veg-mobile-3-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/mobile/veg-mobile-3-1x.png"
+                  alt="mushrooms"
+                />
+              </picture>
             </li>
             <li class="veg-link">
               <h3 class="title-three">corn</h3>
               <p class="text">60 USD / kg</p>
-              <img src="./images/vegetables/corn.png" alt="corn" width="280" />
+              <picture class="veg-picture">
+                <source
+                  srcset="
+                    ./images/desktop/veg-desktop-4-1x.png 1x,
+                    ./images/desktop/veg-desktop-4-2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/veg-tablet-4-1x.png 1x,
+                    ./images/tablet/veg-tablet-4-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/veg-mobile-4-1x.png 1x,
+                    ./images/mobile/veg-mobile-4-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mobile/veg-mobile-4-1x.png" alt="corn" />
+              </picture>
             </li>
-            <li class="veg-link">
+            <li class="veg-link correct-size">
               <h3 class="title-three">sweet potatoes</h3>
               <p class="text">50 USD / kg</p>
-              <img
-                src="./images/vegetables/sweet-potatoes.png"
-                alt="sweet potatoes"
-                width="280"
-              />
+              <picture class="veg-picture">
+                <source
+                  srcset="
+                    ./images/desktop/veg-desktop-5-1x.png 1x,
+                    ./images/desktop/veg-desktop-5-2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/veg-tablet-5-1x.png 1x,
+                    ./images/tablet/veg-tablet-5-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/veg-mobile-5-1x.png 1x,
+                    ./images/mobile/veg-mobile-5-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/mobile/veg-mobile-5-1x.png"
+                  alt="sweet potatoes"
+                />
+              </picture>
             </li>
             <li class="veg-link">
               <h3 class="title-three">carrot</h3>
               <p class="text">40 USD / kg</p>
-              <img
-                src="./images/vegetables/carrot.png"
-                alt="carrot"
-                width="280"
-              />
+              <picture class="veg-picture">
+                <source
+                  srcset="
+                    ./images/desktop/veg-desktop-6-1x.png 1x,
+                    ./images/desktop/veg-desktop-6-2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/veg-tablet-6-1x.png 1x,
+                    ./images/tablet/veg-tablet-6-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/veg-mobile-6-1x.png 1x,
+                    ./images/mobile/veg-mobile-6-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mobile/veg-mobile-6-1x.png" alt="eggplant" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -185,12 +364,15 @@
           </p>
           <ul class="reviews-list">
             <li class="reviews-link">
-              <img
-                class="reviews-image"
-                src="./images/reviews/john-wax.png"
-                alt="John Wax"
-                width="56"
-              />
+              <picture class="rev-picture">
+                <source
+                  srcset="
+                    ./images/reviews/rev-1-1x.png 1x,
+                    ./images/reviews/rev-1-2x.png 2x
+                  "
+                />
+                <img src="./images/reviews/rev-1-1x.png" alt="John Wax" />
+              </picture>
               <h4 class="title-four">John Wax</h4>
               <p class="text">
                 These vegetables are my secret to delicious and healthy meals.
@@ -199,13 +381,18 @@
               </p>
             </li>
             <li class="reviews-link">
-              <img
-                class="reviews-image"
-                src="./images/reviews/victoria-romashenko.png"
-                alt="Victoria
-            Romashenko"
-                width="56"
-              />
+              <picture class="rev-picture">
+                <source
+                  srcset="
+                    ./images/reviews/rev-2-1x.png 1x,
+                    ./images/reviews/rev-2-2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/reviews/rev-2-1x.png"
+                  alt="Victoria Romashenko"
+                />
+              </picture>
               <h4 class="title-four">Victoria Romashenko</h4>
               <p class="text">
                 I love how fast and fresh the vegetables are delivered. Salads
@@ -214,12 +401,15 @@
               </p>
             </li>
             <li class="reviews-link">
-              <img
-                class="reviews-image"
-                src="./images/reviews/ihor-trachuk.png"
-                alt="Ihor Trachuk"
-                width="56"
-              />
+              <picture class="rev-picture">
+                <source
+                  srcset="
+                    ./images/reviews/rev-3-1x.png 1x,
+                    ./images/reviews/rev-3-2x.png 2x
+                  "
+                />
+                <img src="./images/reviews/rev-3-1x.png" alt="Ihor Trachuk" />
+              </picture>
               <h4 class="title-four">Ihor Trachuk</h4>
               <p class="text">
                 Recently tried my fresh tomatoes and peppers - amazing! The
@@ -281,12 +471,30 @@
               </form>
             </div>
             <div class="shop-box-social">
-              <img
-                class="shop-box-image"
-                src="./images/your-order/your-order-png.png"
-                alt="woman with bottle"
-                width="428"
-              />
+              <picture class="order-picture">
+                <source
+                  srcset="
+                    ./images/desktop/order-desktop-1x.png 1x,
+                    ./images/desktop/order-desktop-2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/order-tablet-1x.png 1x,
+                    ./images/tablet/order-tablet-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/order-mobile-1x.png 1x,
+                    ./images/mobile/order-mobile-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mobile/order-mobile-1x.png" alt="woman with bottle" />
+              </picture>
               <p class="text-social">Follow us on our social networks:</p>
               <ul class="social-name-list">
                 <li class="social-name-link">
@@ -316,6 +524,7 @@
         </div>
       </section>
     </main>
+    <!-- Footer Page -->
     <footer class="footer-page">
       <div class="container">
         <div class="box-menu-address">
@@ -324,7 +533,7 @@
               class="footer-logo"
               href="https://akinaru72.github.io/greenharvest-app/"
             >
-              <svg width="216" height="20">
+              <svg class="footer-logo-icon" width="216" height="20">
                 <use href="./images/sprite.svg#icon-logo"></use></svg
             ></a>
             <p class="text">
@@ -341,7 +550,7 @@
               <a href="#reviews">Reviews</a>
             </li>
           </ul>
-          <address>
+          <address class="footer-address-box">
             <ul>
               <li>
                 <a
@@ -369,5 +578,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -1,67 +1,91 @@
-# greenharvest-app
+# GreenHarvest — One-Page Organic Vegetables Website
 
-greenharvest-app
-GreenHarvest (односторінковий сайт)
-Базові задачі
-"Верстка адаптивна, окрім мобільних пристроїв. Точки перелому:
+**GreenHarvest** is an interactive one-page website created to showcase modern web development practices, including responsive design, semantic HTML5, and optimized graphics.  
+The site is designed for a company that sells organic vegetables and provides users with the ability to quickly explore the product range, read customer reviews, learn about the ordering process, and make a purchase through a convenient online form.  
+The site layout is built with various devices in mind — from mobile phones to large desktops — with Retina display support and optimized images, ensuring fast loading and a pleasant user experience.
 
-- mobile: верстка гумова від 320px, стає адаптивною з 375px;
-- tablet: з 768px;
-- desktop: з 1280px "  
-  Верстка валідна (https://validator.w3.org/ , https://jigsaw.w3.org/css-validator/ )  
-  Забезпечити дотримання семантики відповідно до стандартів HTML5  
-  Здійснити підключення шрифтів  
-  Забезпечити оптимізацію розмірів векторної та растрової графіки  
-  Забезпечити підтримку відображення картинок для retina-екранів  
-  Оптимізувати завантаження зображень  
-  Всі svg-іконки підключити через sprite  
-  Додати відображення фавікон сторінки  
-  Структура проєкту
-  "- Header
-- Hero
-- How it works
-- Advertisement
-- Vegetables
-- Reviews
-- Your order
-- Footer"
-  Header
-  В Header-і знаходиться logo та навігація по сайту  
-  Навігація по сайту на мобільній та планшетній версіях відображається як бокова панель, що зʼявляється. Меню фіксоване, висота відповідає висоті в'юпорту.  
-  Навігація має бути реалізована якірними посиланнями, які ведуть до відповідних секцій сайту.  
-  Hero
-  Текст “Organic vegetables to your diet today!” є головним заголовком сайту  
-  Секція також містить описову частину.  
-  Зображення потрібно реалізувати як фонове.  
-  How it works
-  У секції немає видимого заголовку. Потрібно зробити прихований заголовок для краулерів.  
-  Секція також містить описову частину.  
-  Зображення потрібно реалізувати як контенте.  
-  У секції знаходиться перелік необхідних кроків для придбання овочів, який необхідно реалізувати як список елементів за допомогою <ol>. Використовуйте list-style: none, щоб сховати стандартний маркер, та додайте власний стиль за допомогою ::before. Дотримуйтесь документації для створення власного лічильнику, який збільшуватиметься для кожного нового елемента списку  
-  Advertisement
-  У секції немає видимого заголовку. Потрібно зробити прихований заголовок для краулерів.  
-  Секція також містить описову частину.  
-  Vegetables
-  Текст “Organic vegetables” є заголовком секції.  
-  Секція також містить описову частину.  
-  У секції знаходиться перелік продуктів компанії, який необхідно реалізувати як список елементів за допомогою <ul>.  
-  Зображення потрібно реалізувати як контенті.  
-  Reviews
-  Текст “Reviews from our customers" є заголовком секції.  
-  У секції знаходиться перелік відгуків від клієнтів компанії, який необхідно реалізувати як список елементів за допомогою <ul>.  
-  Зображення потрібно реалізувати як контенті.  
-  Your order
-  Текст “Fresh Harvest Box has got you covered” є заголовком секції.  
-  "Секція також містить описову частину та форму, що включає обовʼязкові до заповнення елементи
-- <input> (які є обовʼязковими до заповнення та яким необхідно додати мінімальну валідацію даних для введення за допомогою атрибуту pattern=""(?:[^\s@]\*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"" для стилізації бордера у разі валідного/невалідного введеного значення слід використовувати псевдокласи :valid/:invalid click
-- <textarea> та
-- кнопка “Send"" типу submit ."  
-  Зображення має бути реалізовано як контенте зображення.  
-  "Перелік посилань на соц. мережі компанії має бути реалізовано як список елементів за допомогою <ul>, що відкриватимуть у новій вкладці сторінку GoIT відповідної соц. мережі:
-  Instagram - https://www.instagram.com/goitclub/
-  YouTube - https://www.youtube.com/c/GoIT
-  Facebook - https://www.facebook.com/goITclub/ "  
-  Footer
-  В Footer-і знаходиться лого, слоган компанії, перелік якірних посилань по сайту та контакти компанії.  
-  Перелік якірних посилань, які ведуть до відповідних секцій сайту, мають бути реалізовано як список елементів за допомогою <ul>.  
-  Контактний номер телефону необхідно реалізувати за допомогою протоколів посилання.
+---
+
+## Project Overview
+
+**GreenHarvest** is a single-page website that demonstrates semantic HTML5, adaptive layout, optimized graphics, and interactive forms.
+
+### Basic Requirements
+
+- Adaptive layout except for mobile devices. Breakpoints:
+  - Mobile: flexible layout from `320px`, adaptive from `375px`
+  - Tablet: from `768px`
+  - Desktop: from `1280px`
+- Valid HTML and CSS:
+  - HTML Validator: [https://validator.w3.org/](https://validator.w3.org/)
+  - CSS Validator: [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/)
+- Semantic HTML5 structure
+- Connected fonts
+- Optimized vector and raster graphics
+- Support for Retina screens
+- Optimized image loading
+- All SVG icons connected via sprite
+- Favicon included
+
+---
+
+## Project Structure
+
+- **Header**  
+  Contains logo and site navigation. Mobile and tablet versions use a sidebar that appears on toggle. Menu height matches the viewport. Navigation uses anchor links to sections.
+
+- **Hero**  
+  Main heading: _“Organic vegetables to your diet today!”_  
+  Includes descriptive text. Image implemented as a background.
+
+- **How it works**  
+  Hidden heading for crawlers. Descriptive text and ordered list of steps using `<ol>` with custom counters ([MDN guide](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Counter_styles/Using_counters)). Images implemented as content.
+
+- **Advertisement**  
+  Hidden heading for crawlers. Descriptive text. Images as content.
+
+- **Vegetables**  
+  Section heading: _“Organic vegetables”_  
+  Descriptive text. List of products using `<ul>`. Images as content.
+
+- **Reviews**  
+  Section heading: _“Reviews from our customers”_  
+  List of customer reviews using `<ul>`. Images as content.
+
+- **Your Order**  
+  Section heading: _“Fresh Harvest Box has got you covered”_  
+  Descriptive text and form including:
+
+  - `<input>` fields (required, with minimal validation using pattern attribute)
+  - `<textarea>` field
+  - Submit button: _Send_
+    Images as content.
+
+- **Social Links**  
+  List of company social media links using `<ul>` opening in new tab:
+
+  - [Instagram](https://www.instagram.com/goitclub/)
+  - [YouTube](https://www.youtube.com/c/GoIT)
+  - [Facebook](https://www.facebook.com/goITclub/)
+
+- **Footer**  
+  Contains logo, company slogan, list of anchor links to sections (`<ul>`), and contact information. Phone number is a clickable link.
+
+---
+
+## Resources
+
+- [Figma Layout](<https://www.figma.com/file/wuEpGhwCepGCOUw7mZFRac/Web-Studio-(Version-5.0)?type=design&node-id=570573-1472&mode=design&t=nSUcnqBK92tVgzcJ-0>)
+- [Code Guide](https://codeguide.co/)
+- [MDN: Using counters](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Counter_styles/Using_counters)
+- [Instagram](https://www.instagram.com/goitclub/)
+- [YouTube](https://www.youtube.com/c/GoIT)
+- [Facebook](https://www.facebook.com/goITclub/)
+- [CodePen Demo](https://codepen.io/SergeyKorobka/pen/WNWeKVp)
+
+---
+
+## Links
+
+- [GitHub Repository](https://github.com/Akinaru72/greenharvest-app)
+- [Live Page](https://akinaru72.github.io/greenharvest-app/)
